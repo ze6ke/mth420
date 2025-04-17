@@ -1,8 +1,8 @@
 # standard_library.py
 """Python Essentials: The Standard Library.
-<Name>
-<Class>
-<Date>
+Zeke Wander
+MTH420
+4/18/25
 """
 
 from math import sqrt
@@ -13,7 +13,8 @@ def prob1(L):
     """Return the minimum, maximum, and average of the entries of L
     (in that order, separated by a comma).
     """
-    raise NotImplementedError("Problem 1 Incomplete")
+    return (min(L),max(L),sum(L)/len(L))
+    #raise NotImplementedError("Problem 1 Incomplete")
 
 
 # Problem 2
@@ -21,7 +22,32 @@ def prob2():
     """Determine which Python objects are mutable and which are immutable.
     Test integers, strings, lists, tuples, and sets. Print your results.
     """
-    raise NotImplementedError("Problem 2 Incomplete")
+    i = 1
+    j=i
+    j=2
+    print (f"Integers are{'' if j==i else ' not'} mutable.")
+    
+    i="hi"
+    j=i
+    j+=" there"
+    print (f"String are{'' if j==i else ' not'} mutable.")
+    
+    i=[1,2,3]
+    j=i
+    j[1]=2
+    print (f"Lists are{'' if j==i else ' not'} mutable.")
+    
+    i=(1,2,3)
+    j=i
+    j=(1,2) #there are no modification calls.  This call would create a new item for a list as well.
+    print (f"Tuples are{'' if j==i else ' not'} mutable.")
+    
+    i={1,2,3}
+    j=i
+    j.add(4)
+    print (f"Sets are{'' if j==i else ' not'} mutable.")
+
+    #raise NotImplementedError("Problem 2 Incomplete")
 
 
 # Problem 3
@@ -36,7 +62,9 @@ def hypot(a, b):
     Returns:
         The length of the triangle's hypotenuse.
     """
-    raise NotImplementedError("Problem 3 Incomplete")
+    import calculator as c
+    return c.sqrt(c.sum(c.product(a,a), c.product(b,b)))
+    #raise NotImplementedError("Problem 3 Incomplete")
 
 
 # Problem 4
@@ -49,7 +77,11 @@ def power_set(A):
     Returns:
         (list(sets)): The power set of A as a list of sets.
     """
-    raise NotImplementedError("Problem 4 Incomplete")
+    from itertools import combinations, chain
+    
+    ps = [combinations(A,i) for i in range(len(A)+1)]
+    return (list(chain(*ps)))
+    #raise NotImplementedError("Problem 4 Incomplete")
 
 
 # Problem 5: Implement shut the box.
