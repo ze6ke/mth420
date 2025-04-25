@@ -62,8 +62,10 @@ def hypot(a, b):
     Returns:
         The length of the triangle's hypotenuse.
     """
-    import calculator as c
-    return c.sqrt(c.sum(c.product(a,a), c.product(b,b)))
+    #import calculator as c
+    #return c.sqrt(c.sum(c.product(a,a), c.product(b,b)))
+    import calculator
+    return calculator.sqrt(calculator.sum(calculator.product(a,a), calculator.product(b,b)))
     #raise NotImplementedError("Problem 3 Incomplete")
 
 
@@ -80,7 +82,7 @@ def power_set(A):
     from itertools import combinations, chain
     
     ps = [combinations(A,i) for i in range(len(A)+1)]
-    return (list(chain(*ps)))
+    return ([set(c) for c in chain(*ps)])
     #raise NotImplementedError("Problem 4 Incomplete")
 
 
