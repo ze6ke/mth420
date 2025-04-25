@@ -37,3 +37,108 @@ Linter Notes:
 
 -------------------------------------------------------------------------------
 
+04/25/25 21:11
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (5 points):
+Score += 5
+
+Problem 7 (10 points):
+Score += 10
+
+Problem 8 (5 points):
+Score += 5
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 50/50 = 100.0%
+
+Excellent!
+
+Linter Notes: 
+/home/gibsonn/Instructor-Materials/ZekeWander/PythonIntro/python_intro.py:19:17: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/PythonIntro/python_intro.py:27:12: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/PythonIntro/python_intro.py:28:12: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/PythonIntro/python_intro.py:77:24: E225 missing whitespace around operator
+
+
+-------------------------------------------------------------------------------
+
+04/25/25 21:33
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (5 points):
+Score += 5
+
+Problem 7 (10 points):
+Score += 10
+
+Problem 8 (10 points):
+Score += 5
+
+Total score: 45/50 = 90.0%
+
+Great job!
+
+Linter Notes: None
+
+
+Comments:
+	REGRADE
+
+-------------------------------------------------------------------------------
+
+04/25/25 21:35
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (5 points):
+Score += 5
+
+Problem 7 (10 points):
+Score += 10
+
+Problem 8 (10 points):
+Score += 10
+
+Total score: 50/50 = 100.0%
+
+Excellent!
+
+Linter Notes: None
+
+-------------------------------------------------------------------------------
+
