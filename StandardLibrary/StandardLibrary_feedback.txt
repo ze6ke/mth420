@@ -1,0 +1,32 @@
+04/25/25 21:47
+
+Problem 1 (15 points):
+Score += 15
+
+Problem 2 (15 points):
+Score += 15
+
+Problem 3 (10 points):
+ModuleNotFoundError: No module named 'calculator'
+
+Problem 4 (10 points):
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set(A)
+	Elements of power_set(A) are type <class 'list'>, not set
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set(A)
+	Elements of power_set(A) are type <class 'list'>, not set
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set(A)
+	Elements of power_set(A) are type <class 'list'>, not set
+	power_set(A) does not contain set() (the empty set)
+	power_set(A) does not contain set(A)
+	Elements of power_set(A) are type <class 'list'>, not set
+Score += 0
+
+Total score: 30/50 = 60.0%
+
+Linter Notes: None
+
+-------------------------------------------------------------------------------
+
