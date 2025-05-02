@@ -1,0 +1,87 @@
+05/02/25 19:56
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+AttributeError: 'NoneType' object has no attribute 'shape'
+
+Problem 3 (5 points):
+prob3() failed
+Score += 1
+
+Problem 4 (5 points):
+Score += 5
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (10 points):
+Score += 10
+
+Problem 7 (10 points):
+Score += 10
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 41/50 = 82.0%
+
+Linter Notes: 
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:13:6: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:13:18: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:13:21: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:13:23: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:13:25: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:13:27: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:13:42: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:6: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:18: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:20: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:23: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:25: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:27: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:30: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:32: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:34: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:36: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:39: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:42: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:14:57: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:22:6: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:22:18: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:22:20: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:22:22: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:22:24: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:22:26: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:22:28: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:22:31: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:22:33: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:22:47: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:24:23: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:24:28: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:33:27: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:34:25: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:49:8: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:64:33: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:65:29: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:68:34: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:69:37: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:70:37: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:88:40: E231 missing whitespace after ','
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:99:38: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:99:53: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:99:68: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:100:29: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:100:44: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:100:59: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:101:32: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:101:50: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:101:68: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:102:31: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:102:49: E225 missing whitespace around operator
+/home/gibsonn/Instructor-Materials/ZekeWander/NumpyIntro/numpy_intro.py:102:67: E225 missing whitespace around operator
+
+
+-------------------------------------------------------------------------------
+
