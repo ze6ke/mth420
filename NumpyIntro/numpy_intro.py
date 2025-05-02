@@ -1,8 +1,8 @@
 # numpy_intro.py
 """Python Essentials: Intro to NumPy.
-<Name>
-<Class>
-<Date>
+<Zeke Wander>
+<Mth420>
+<5/2/25>
 """
 
 import numpy as np
@@ -10,8 +10,8 @@ import numpy as np
 
 def prob1():
     """ Define the matrices A and B as arrays. Return the matrix product AB. """
-    A=np.array([3,-1,4,1,5,-9]).reshape(2,3)
-    B=np.array([2,6,-5,3,5,-8,9,7,9,-3,-2,-3]).reshape(3,-1)
+    A=np.array([3, -1, 4, 1, 5, -9]).reshape(2,3)
+    B=np.array([2, 6, -5, 3, 5, -8, 9, 7, 9, -3, -2, -3]).reshape(3, -1)
     
     return (A@B)
     #raise NotImplementedError("Problem 1 Incomplete")
@@ -19,9 +19,9 @@ def prob1():
 
 def prob2():
     """ Define the matrix A as an array. Return the matrix -A^3 + 9A^2 - 15A. """
-    A=np.array([3,1,4,1,5,9,-5,3,1]).reshape(3,-1)
+    A=np.array([3, 1, 4, 1, 5, 9, -5, 3, 1]).reshape(3, -1)
     
-    print(-A@A@A + 9 *A@A -15*A)
+    return(-A @ A @ A + 9 * A @ A - 15 * A) #change from print to return after feedback
     #raise NotImplementedError("Problem 2 Incomplete")
 
 
@@ -30,9 +30,10 @@ def prob3():
     this section of the manual (not np.array()). Calculate the matrix product ABA,
     change its data type to np.int64, and return it.
     """
-    A = np.triu(np.ones((7,7), dtype=np.int64))
-    B = 6*A - np.ones((7,7), dtype=np.int64)
-    return ((A@B@A).astype(np.int64))
+    A = np.triu(np.ones((7, 7), dtype=np.int64))
+    #B = 6*A - np.ones((7,7), dtype=np.int64) #corrected after feedback
+    B = (5 * np.ones((7, 7), dtype=np.int64) - 6 * A).transpose() 
+    return ((A @ B @ A).astype(np.int64))
     #raise NotImplementedError("Problem 3 Incomplete")
 
 
@@ -46,7 +47,7 @@ def prob4(A):
         array([0, 0, 3])
     """
     B = np.copy(A)
-    B[B<0] = 0
+    B[B < 0] = 0
     return (B)
     #raise NotImplementedError("Problem 4 Incomplete")
 
@@ -61,13 +62,13 @@ def prob5():
     of the appropriate size.
     """
     
-    A = (np.arange(6)).reshape(3,2).transpose()
-    B = 3*np.tril(np.ones((3,3), dtype=np.int64))
-    C = np.diag(3*[-2])
+    A = (np.arange(6)).reshape(3, 2).transpose()
+    B = 3 * np.tril(np.ones((3, 3), dtype=np.int64))
+    C = np.diag(3 * [-2])
 
-    row1 = np.hstack((np.zeros((3,3)), A.transpose(), np.eye(3)))
-    row2 = np.hstack((A, np.zeros((2,5))))
-    row3 = np.hstack((B, np.zeros((3,2)), C))
+    row1 = np.hstack((np.zeros((3, 3)), A.transpose(), np.eye(3)))
+    row2 = np.hstack((A, np.zeros((2, 5))))
+    row3 = np.hstack((B, np.zeros((3, 2)), C))
     combined = np.vstack((row1, row2, row3))
 
     return (combined)
@@ -85,7 +86,7 @@ def prob6(A):
                [ 0.        ,  1.        ,  0.        ],
                [ 0.33333333,  0.33333333,  0.33333333]])
     """
-    return (A/(A.sum(axis=1).reshape(-1,1)))
+    return (A / (A.sum(axis=1).reshape(-1, 1)))
     #raise NotImplementedError("Problem 6 Incomplete")
 
 
@@ -96,9 +97,9 @@ def prob7():
     """
     grid = np.load("grid.npy")
     
-    return (max(np.max(grid[:, :-3] *grid[:, 1:-2] *grid[:, 2:-1] *grid[:, 3:]),
-        np.max(grid[:-3, ] *grid[1:-2, :] *grid[2:-1, :] *grid[3:, :]),
-        np.max(grid[:-3, :-3] *grid[1:-2, 1:-2] *grid[2:-1, 2:-1] *grid[3:, 3:]),
-        np.max(grid[:-3, 3:] *grid[1:-2, 2:-1] *grid[2:-1, 1:-2] *grid[3:, :-3])))
+    return (max(np.max(grid[:, :-3] * grid[:, 1:-2] * grid[:, 2:-1] * grid[:, 3:]),
+        np.max(grid[:-3, ] * grid[1:-2, :] * grid[2:-1, :] * grid[3:, :]),
+        np.max(grid[:-3, :-3] * grid[1:-2, 1:-2] * grid[2:-1, 2:-1] * grid[3:, 3:]),
+        np.max(grid[:-3, 3:] * grid[1:-2, 2:-1] * grid[2:-1, 1:-2] * grid[3:, :-3])))
     #Print ("I'm not supposed to do this problem")
     #raise NotImplementedError("Problem 7 Incomplete")
