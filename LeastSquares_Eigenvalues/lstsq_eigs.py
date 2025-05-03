@@ -1,8 +1,8 @@
 # lstsq_eigs.py
 """Volume 1: Least Squares and Computing Eigenvalues.
-<Name>
-<Class>
-<Date>
+Zeke Wander
+MTH420
+5/2/25
 """
 
 import numpy as np
@@ -23,7 +23,12 @@ def least_squares(A, b):
     Returns:
         x ((n, ) ndarray): The solution to the normal equations.
     """
-    raise NotImplementedError("Problem 1 Incomplete")
+    (Q,R) = la.qr(A, mode = "economic")
+    
+    x = np.linalg.inv(R) @ Q.transpose() @ b
+    
+    return(x)
+    #raise NotImplementedError("Problem 1 Incomplete")
 
 # Problem 2
 def line_fit():
@@ -31,7 +36,20 @@ def line_fit():
     index for the data in housing.npy. Plot both the data points and the least
     squares line.
     """
-    raise NotImplementedError("Problem 2 Incomplete")
+    yearstart = 2000
+    
+    data = np.load("housing.npy")
+
+    b = prices = data[:, 1] #0-indexed year
+    years = data[:, 0]
+    A = np.hstack((np.ones((len(prices),1)), years.reshape(-1,1)))
+    (x1,x2) = least_squares(A,b)
+    fitline_x = np.linspace(np.min(years), np.max(years), 2)
+    fitline_y = fitline_x * x2 + x1
+
+    plt.plot(years + yearstart, prices, "o")
+    plt.plot(fitline_x + yearstart, fitline_y)
+    plt.show()
 
 
 # Problem 3
@@ -40,9 +58,24 @@ def polynomial_fit():
     the year to the housing price index for the data in housing.npy. Plot both
     the data points and the least squares polynomials in individual subplots.
     """
-    raise NotImplementedError("Problem 3 Incomplete")
+    data = np.load("housing.npy")
+    yearstart = 2000
+    b = prices = data[:, 1] #0-indexed year
+    years = data[:, 0].reshape(-1,1)
+    for i in range(1, 5, 1):
+        A = np.hstack((np.ones((len(prices),1)), years **range(1,(3 * i) + 1)))
+        x = least_squares(A,b)
+        fitline_y = (A * x).sum(axis = 1)
+
+        plt.subplot(2, 2, i)
+        plt.plot(years + yearstart, prices, "o")
+        plt.plot(A[:,1] + 2000, fitline_y)
+        plt.title(f"Degree {3 * i}")
+    plt.tight_layout()
+    plt.show()
 
 
+#instructions say to stop after problem 3
 def plot_ellipse(a, b, c, d, e):
     """Plot an ellipse of the form ax^2 + bx + cxy + dy + ey^2 = 1."""
     theta = np.linspace(0, 2*np.pi, 200)
@@ -54,6 +87,7 @@ def plot_ellipse(a, b, c, d, e):
     plt.plot(r*cos_t, r*sin_t)
     plt.gca().set_aspect("equal", "datalim")
 
+    
 # Problem 4
 def ellipse_fit():
     """Calculate the parameters for the ellipse that best fits the data in
