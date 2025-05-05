@@ -5,6 +5,7 @@ MTH420
 4/18/25
 """
 
+import calculator
 from math import sqrt
 
 
@@ -64,7 +65,8 @@ def hypot(a, b):
     """
     #import calculator as c
     #return c.sqrt(c.sum(c.product(a,a), c.product(b,b)))
-    import calculator
+    #import calculator #moved to top of file for grading script
+    
     return calculator.sqrt(calculator.sum(calculator.product(a,a), calculator.product(b,b)))
     #raise NotImplementedError("Problem 3 Incomplete")
 
