@@ -85,13 +85,21 @@ def drazin_inverse(A, tol=1e-4):
     (n,n)=np.shape(A)
     (T1, Q1, k1) = la.schur(A, sort=lambda x: abs(x) > tol)
     (T2, Q2, k2) = la.schur(A, sort=lambda x: abs(x) <= tol)
+    
+
     U = np.hstack((Q1[:,:k1], Q2[:,:k2]))
     Uinv = la.inv(U)
     V = Uinv@A@U
     Z = np.zeros((n,n))
-    if k1 >= 0:
-        Z[:k1,:k1] = la.inv(V)[:k1,:k1]
+    if k1 != 0:
+        Z[:k1,:k1] = la.inv(V[:k1,:k1])
     Dinv = U@Z@Uinv
+
+    #print("k = %d" % k1)
+    #print ("U = %s" % U)
+    #print ("UInv = %s" % Uinv)
+    #print ("V = %s" % V)
+
     return (Dinv)
 
 
