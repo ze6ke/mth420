@@ -3,7 +3,8 @@
 
 SOURCE="https://github.com/Foundations-of-Applied-Mathematics/Data.git"
 #LABS=("ARMA" "Animation" "AnisotropicDiffusion" "BinaryTrees" "BreadthFirstSearch" "CDHMM" "CVXPY_Intro" "Conditioning_Stability" "ConvolutionFiltering" "DataCleaning" "DataVisualization" "Differentiation" "Dijkstra" "DrazinInverse" "Exceptions_FileIO" "FacialRecognition" "FourierTransform" "GMM" "Gibbs_LDA" "GradientMethods" "HMM" "ImageProcessing" "ImageSegmentation" "InformationTheory" "InteriorPoint_Linear" "InteriorPoint_Quadratic" "InverseProblem" "KMeans" "LSI_SkLearn" "LeastSquares_Eigenvalues" "LinearRegression" "LinearTransformations" "MarkovChains" "MatplotlibIntro" "Metropolis" "NMF" "NMF_Recommender" "NaiveBayes" "NearestNeighbor" "NumpyIntro" "PageRank" "Pandas1" "Pandas2" "Pandas3" "Pandas4" "PoissonEquation" "PolynomialInterpolation" "Profiling" "RNN" "RandomForest" "RegularExpressions" "SIR_Models" "SQL1" "SQL2" "SVD_ImageCompression" "Simplex" "Spark" "TotalVariation" "UnixShell1" "UnixShell2" "Wavelets" "WebScraping")
-LABS=("CVXPY_Intro"  "DrazinInverse"   "LeastSquares_Eigenvalues" "MatplotlibIntro"  "NumpyIntro" "Simplex")
+#LABS=("CVXPY_Intro"  "DrazinInverse"   "LeastSquares_Eigenvalues" "MatplotlibIntro"  "NumpyIntro" "Simplex")
+LABS=("FacialRecognition" )
 GIT="https://git-scm.com"
 TEMPDIR="_DATA_"`date +%s`"_"
 

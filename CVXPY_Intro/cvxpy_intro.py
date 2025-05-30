@@ -56,6 +56,9 @@ def l1Min(A, b):
         The optimizer x (ndarray)
         The optimal value (float)
     """
+    
+    assert A.shape[0] == b.shape[0], "mismatched dimensions"
+    
     n = A.shape[1]
     x = cp.Variable(n, nonneg = True)
     objective = cp.Minimize(cp.norm(x, 1))
