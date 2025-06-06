@@ -60,7 +60,8 @@ def l1Min(A, b):
     assert A.shape[0] == b.shape[0], "mismatched dimensions"
     
     n = A.shape[1]
-    x = cp.Variable(n, nonneg = True)
+    #x = cp.Variable(n, nonneg = True)
+    x = cp.Variable(n)
     objective = cp.Minimize(cp.norm(x, 1))
     constraints = [A @ x == b]
     
