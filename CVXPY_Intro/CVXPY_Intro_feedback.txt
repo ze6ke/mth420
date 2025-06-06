@@ -6,6 +6,8 @@ Score += 10
 Problem 2 (10 points):
 AttributeError: 'NoneType' object has no attribute 'shape'
 
+Notes: Try without the "nonneg = True"
+
 Problem 3 (10 points):
 Score += 10
 
